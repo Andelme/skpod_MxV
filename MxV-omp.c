@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 100000
+unsigned N;
+
 void
 init_data(float **m, float *v) 
 {
@@ -28,7 +29,10 @@ int i, j;
 int
 main(int argc, char **argv) 
 {
-    omp_set_num_threads((int)(argv[1][0] - '0'));
+    unsigned threads;
+    sscanf(argv[1], "%u", &threads);
+    sscanf(argv[2], "%u", &N);
+    omp_set_num_threads(threads);
     
     float *vector = calloc(N, sizeof(float));
     float *result = calloc(N, sizeof(float));
