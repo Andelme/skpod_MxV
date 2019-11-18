@@ -16,11 +16,10 @@ init_data(float **m, float *v)
     return;
 }
 
-void kernel_MxV(float **m, float *v, float *res) {
-int i, j;
-#pragma omp parallel for private(i, j)
-    for(i = 0; i < N; ++i) {
-        for(j = 0; j < N; ++j) {
+void MxV_column(float **m, float *v, float *res) {
+#pragma omp parallel for
+    for (int j = 0; j < N; ++j) {
+        for (int i = 0; i < N; ++i) {
             res[i] += v[j] * m[i][j];
         }
     }
@@ -45,7 +44,7 @@ main(int argc, char **argv)
     init_data(matrix, vector); 
 
     double bench_t1 = omp_get_wtime();
-    kernel_MxV(matrix, vector, result);
+    MxV_string(matrix, vector, result);
     double bench_t2 = omp_get_wtime();
 
     printf("Time in seconds: %.3f\n", bench_t2 - bench_t1); 
