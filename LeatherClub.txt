@@ -1,0 +1,87 @@
+=== START ===
+
+[1 1000]
+Time in seconds: 0.001
+Time in seconds: 0.001
+Time in seconds: 0.001
+Time in seconds: 0.001
+Time in seconds: 0.002
+
+[2 1000]
+Time in seconds: 0.001
+Time in seconds: 0.001
+Time in seconds: 0.001
+Time in seconds: 0.001
+Time in seconds: 0.001
+
+[4 1000]
+Time in seconds: 0.001
+Time in seconds: 0.001
+Time in seconds: 0.001
+Time in seconds: 0.000
+Time in seconds: 0.001
+
+[1 5000]
+Time in seconds: 0.029
+Time in seconds: 0.029
+Time in seconds: 0.029
+Time in seconds: 0.029
+Time in seconds: 0.030
+
+[2 5000]
+Time in seconds: 0.015
+Time in seconds: 0.017
+Time in seconds: 0.015
+Time in seconds: 0.015
+Time in seconds: 0.015
+
+[4 5000]
+Time in seconds: 0.008
+Time in seconds: 0.008
+Time in seconds: 0.008
+Time in seconds: 0.008
+Time in seconds: 0.008
+
+[1 10000]
+Time in seconds: 0.123
+Time in seconds: 0.123
+Time in seconds: 0.123
+Time in seconds: 0.126
+Time in seconds: 0.126
+
+[2 10000]
+Time in seconds: 0.062
+Time in seconds: 0.062
+Time in seconds: 0.062
+Time in seconds: 0.062
+Time in seconds: 0.071
+
+[4 10000]
+Time in seconds: 0.036
+Time in seconds: 0.032
+Time in seconds: 0.035
+Time in seconds: 0.035
+Time in seconds: 0.032
+
+[1 20000]
+Time in seconds: 0.502
+Time in seconds: 0.498
+Time in seconds: 0.506
+Time in seconds: 0.498
+Time in seconds: 0.489
+
+[2 20000]
+Time in seconds: 0.245
+Time in seconds: 0.251
+Time in seconds: 0.246
+Time in seconds: 0.250
+Time in seconds: 0.248
+
+[4 20000]
+Time in seconds: 0.128
+Time in seconds: 0.128
+Time in seconds: 0.140
+Time in seconds: 0.127
+Time in seconds: 0.128
+
+=== END ===
