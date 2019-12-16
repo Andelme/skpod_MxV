@@ -51,7 +51,14 @@ main(int argc, char **argv)
 
     printf("Time in seconds: %.3f\n", bench_t2 - bench_t1); 
 
+    for (int i = 0; i < N; ++i) {
+        free(matrix[i]);
+    }
+    for (int i = 0; i < N; ++i) {
+        printf("%f\n", result[i]);
+    }
     free(matrix);
+    free(result);
     free(vector);
     return 0;
 }
